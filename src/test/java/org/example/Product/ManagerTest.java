@@ -185,6 +185,7 @@ class ManagerTest {
         Product[] expected = repo.findAll();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     // возвращаем первый смартфонов из массива
     @Test
     public void theFirstSmartphoneFromTheArray() {
@@ -218,6 +219,7 @@ class ManagerTest {
         Product[] expected = repo.findAll();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     // поиск нескольких смартфонов по ключевому слову
     @Test
     public void searchForSmartphonesByName() {
