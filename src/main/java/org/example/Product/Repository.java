@@ -1,4 +1,5 @@
 package org.example.Product;
+
 public class Repository {
     Product[] products = new Product[0];  //массив храняший все продукты размер 0
 
@@ -17,7 +18,7 @@ public class Repository {
         products = tmp; // перезаписываем переменную сохраняя ссылку на переменн.нового массива
     }
 
-//метод удаления продукта по идентификатору
+    //метод удаления продукта по идентификатору
     public void removeById(int removeId) {
         Product[] tmp = new Product[products.length - 1];
         int index = 0;

@@ -27,6 +27,7 @@ class RepositoryTest {
         Product[] expected = repo.findAll();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     // возвращаем одну книгу из массива
     @Test
     public void returnOneBook() {
@@ -118,6 +119,7 @@ class RepositoryTest {
         Product[] expected = repo.findAll();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     // возвращаем один смартфон из массива
     @Test
     public void returnOneSmartphone() {

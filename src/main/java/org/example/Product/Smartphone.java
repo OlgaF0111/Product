@@ -1,4 +1,5 @@
 package org.example.Product;
+
 public class Smartphone extends Product {
     private String vendor;
 
@@ -8,6 +9,7 @@ public class Smartphone extends Product {
     }
 
     public String getVendor() {
+
         return vendor;  // геттер только одного поля
     }
 }

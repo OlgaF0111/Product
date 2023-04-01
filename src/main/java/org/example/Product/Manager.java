@@ -1,15 +1,18 @@
 package org.example.Product;
+
 public class Manager {
     Repository repository; //поле для хранения репозитория
 
     public Manager(Repository repository) {   // объявляем репозиторий в конструкторе
         this.repository = repository;
     }
-// метод хранения всех товаров
+
+    // метод хранения всех товаров
     public void add(Product product) {
         repository.add(product);
     }
-// метод поиска по ключевому слову
+
+    // метод поиска по ключевому слову
     public Product[] searchBy(String text) {
         Product[] result = new Product[0]; // тут будем хранить подошедшие запросу продукты
         for (Product product : repository.findAll()) {
@@ -28,8 +31,8 @@ public class Manager {
     // метод соответсвия товара запросу
     public boolean matches(Product product, String search) {
         return product.getName().contains(search);  // возвращает тру или фолс
-        }
     }
+}
 
 
 
